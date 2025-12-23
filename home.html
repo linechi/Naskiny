@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merry Christmas</title>
+    <link rel="stylesheet" href="styles.css">
+<body>
+<style>
+    body {
+        font-family: monospace;
+    }
+</style>
+<div class="card">
+    <h1><b>🇲🇪🇷🇷🇾 🇨🇭🇷🇮🇸🇹🇲🇦🇸</b></h1>
+
+    <div class="nav-buttons">
+        <a href="home.html">
+            <button class="nav-btn">home</button>
+        </a>
+        <a href="mh.html">
+            <button class="nav-btn">mental health</button>
+        </a>
+        <a href="message.html">
+            <button class="nav-btn">message</button>
+        </a>
+        <a href="game.html">
+            <button class="nav-btn">mini game</button>
+        </a>
+    </div>
+
+    <div class="content">
+        <p>Merry Christmas! It's 17th December and I've been working on this for some time and I hope you like it. I've also prepared a mini game for you, so I hope you will enjoy it a bit. I haven't been coding for a long time, because I don't have the motivation to do it, but I wanted to prepare something special for you. I know you don't celebrate Christmas, but that doesn't mean you won't get a gift from me. You know you're special to me, right? I want you to be happy and I hope this makes you at least a little bit happier, because I know how rough it has been an I'm sure there are some things you don't talk much about. I hope you won't drown in your problems, so I wanted to make sure you know that I will always be here for you. No matter what. Even if you feel like the world is falling apart, I'll make sure to comfort you and help you out. I wish you the best and I hope you're taking care of yourself, if not it's okay, because I know some days can be tough.</p>
+
+        <p>We've been spending a lot of time together and honestly you made me happy, I've been feeling numb and empty for some time till I've I met you. You make me feel like living is still worth it. I don't know how to explain it, but I don't feel like cutting myself when I'm with you, I enjoy every second of us playing, talking or just sitting in silence and doing nothing, you know… you're the reason I've been holding up. Usually, I don't talk to anyone and just do nothing, but you also make me want to socialize with my friends more and they even told me it looks like I've been doing well, yk why? Cause of your presence! Oh jeez, you're so special to me, I'm so grateful to have you, I know I'm repeating myself over and over again, but you're so amazing, you're perfect! I wish you the best Christmas, sweetie! Below this message there's the final gift for you, I hope you will appreciate it, I'm not sure what game you wanted, so I bought that instead. Have a wonderful day and Christmas<3</p>
+    </div>
+
+    <div class="gift-section">
+        <div class="gift-text"><b>🇬🇮🇫🇹 🇫🇴🇷 🇾🇴🇺</b>
+            <a href="gift.html" style="text-decoration: none;">
+                <div class="gift-container">
+                    <div class="lid">
+                        <div class="bow">
+                            <div class="bow-left"></div>
+                            <div class="bow-right"></div>
+                            <div class="bow-center"></div>
+                        </div>
+                    </div>
+                    <div class="box"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <p class="footer-text">2025 Merry Christmas, to Naskiny</p>
+    <p class="footer-text">Made with <3 by Linnie</p>
+</div>
+
+<script>
+    function createSnowflake() {
+        const snowflake = document.createElement('div');
+        snowflake.classList.add('snowflake');
+        snowflake.innerHTML = '❄';
+        snowflake.style.left = Math.random() * 100 + 'vw';
+        snowflake.style.fontSize = (Math.random() * 1.5 + 0.5) + 'em';
+        snowflake.style.animationDuration = (Math.random() * 3 + 5) + 's';
+        snowflake.style.opacity = Math.random() * 0.6 + 0.4;
+        document.body.appendChild(snowflake);
+
+        setTimeout(() => {
+            snowflake.remove();
+        }, 8000);
+    }
+
+    setInterval(createSnowflake, 200);
+
+    for (let i = 0; i < 20; i++) {
+        setTimeout(createSnowflake, i * 100);
+    }
+</script>
+</body>
+</html>

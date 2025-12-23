@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merry Christmas</title>
+    <link rel="stylesheet" href="styles.css">
+<body>
+<style>
+    body {
+        font-family: monospace;
+    }
+</style>
+<div class="card">
+    <h1><b>🇲🇪🇷🇷🇾 🇨🇭🇷🇮🇸🇹🇲🇦🇸</b></h1>
+
+    <div class="nav-buttons">
+        <a href="home.html">
+            <button class="nav-btn">home</button>
+        </a>
+        <a href="mh.html">
+            <button class="nav-btn">mental health</button>
+        </a>
+        <a href="message.html">
+            <button class="nav-btn">message</button>
+        </a>
+        <a href="game.html">
+            <button class="nav-btn">mini game</button>
+        </a>
+    </div>
+
+    <div class="content">
+  <p>Did you know I was secretly learning twitch for you? I’m still dogshit though. I wanna be a better twitch, but I just suck. I admire your skills with twitch, like when we used to play, it was so satisfying just watching you delete them like nothing. AP twitch looks so fun, but I don’t have the brains for it, but I will eventually get better, right!</p>
+    <p>I wanted to make a Spotify playlist for you, but I feel like that might too much and you might take it as too much or you know, anyway, I hope you’re using Spotify to the fullest, I don’t have a problem with paying it, since we needed a member anyway. I hope you like it, you can join your other friends and listen to them.</p>
+      <p>Hey! Did you know I like you? Like a lot… of course I do you dumbass, why wouldn’t I. It pains me when you don’t think you’re amazing, you’re literally the most awesome person in this World. I am not going to write more, because I literally wrote everything in the mental health thingy, I might’ve fucked up the whole thing, because I wrote it in the wrong folder, anyway haha, sorry! </p>
+    <p>Enjoy your Christmas, don’t forget to claim the gift and checkout the mini game, I’m still having a hard time figuring it out and I think I spent way too much time on this just for it to be something so dumb and little. Whatever, I hope you like it either way </p>   
+<img src="twitch.png" style="width: 100%; border-radius: 20px;border: 3px solid white;box-shadow: #0000003b 5px 1px 7px">
+    
+    </div>
+        <p class="footer-text">2025 Merry Christmas, to Naskiny</p>
+        <p class="footer-text">Made with <3 by Linnie</p>
+
+
+        <script>
+            function createSnowflake() {
+                const snowflake = document.createElement('div');
+                snowflake.classList.add('snowflake');
+                snowflake.innerHTML = '❄';
+                snowflake.style.left = Math.random() * 100 + 'vw';
+                snowflake.style.fontSize = (Math.random() * 1.5 + 0.5) + 'em';
+                snowflake.style.animationDuration = (Math.random() * 3 + 5) + 's';
+                snowflake.style.opacity = Math.random() * 0.6 + 0.4;
+                document.body.appendChild(snowflake);
+
+                setTimeout(() => {
+                    snowflake.remove();
+                }, 8000);
+            }
+
+            setInterval(createSnowflake, 200);
+
+            for (let i = 0; i < 20; i++) {
+                setTimeout(createSnowflake, i * 100);
+            }
+        </script>
+</body>
+</html>

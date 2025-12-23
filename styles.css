@@ -1,0 +1,249 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url(https://images2.alphacoders.com/977/thumb-1920-977380.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    z-index: -1;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.593);
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 700px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-weight: normal;
+    color: #072e56;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.nav-btn {
+    padding: 12px 30px;
+    border: 2px solid #2a285f;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.524);
+    cursor: pointer;
+    color: #021931;
+    font-family: monospace;
+    font-size: 1em;
+    transition: all 0.3s;
+}
+
+.nav-btn:hover {
+    background: #2a285f;
+    color: white;
+}
+
+.content {
+    margin-bottom: 30px;
+    line-height: 1.6;
+    text-align: justify;
+font-family: monospace;
+}
+
+p {
+    margin-bottom: 30px;
+    font-weight: normal;
+
+    color: #021931;
+}
+
+.gift-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gift-text {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #0a2e51;
+}
+
+.gift-container {
+    position: relative;
+    width: 150px;
+    height: 175px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.box {
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+    height: 125px;
+    background: #4486ff;
+    border-radius: 5px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: #eed451;
+    transform: translateY(-50%);
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 20px;
+    height: 100%;
+    background: #fee774;
+    transform: translateX(-50%);
+}
+
+.lid {
+    position: absolute;
+    bottom: 125px;
+    width: 150px;
+    height: 30px;
+    background: #4b66ff;
+    border-radius: 5px 5px 3px 3px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.lid::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 12px;
+    background: #ffd95b;
+    transform: translateY(-50%);
+}
+
+.bow {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 30px;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bow-left, .bow-right {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: hsl(35, 100%, 67%);
+    border-radius: 50% 50% 0 50%;
+    top: 8px;
+}
+
+.bow-left {
+    left: 0;
+    transform: rotate(-45deg);
+}
+
+.bow-right {
+    right: 0;
+    transform: rotate(135deg);
+}
+
+.bow-center {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #eda633;
+    border-radius: 50%;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.gift-container:hover .lid {
+    bottom: 160px;
+    transform: rotateX(-10deg);
+}
+
+.gift-container:hover .message {
+    opacity: 1;
+}
+
+.footer-text {
+    font-size: 0.8em;
+    text-align: center;
+    color: #021931;
+    margin: 0;
+}
+
+.snowflake {
+    position: fixed;
+    top: -10px;
+    color: #ffffff27;
+    font-size: 1em;
+    user-select: none;
+    z-index: 1;
+    pointer-events: none;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
+.w3-left,
+.w3-right,
+.w3-badge {
+    cursor: pointer
+}
+
+.w3-badge {
+    height: 13px;
+    width: 13px;
+    padding: 0
+}

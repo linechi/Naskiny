@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merry Christmas</title>
+    <link rel="stylesheet" href="styles.css">
+<body>
+<style>
+    body {
+        font-family: monospace;
+    }
+</style>
+<div class="card">
+  <h1><b>​🇮​ ​🇭​​🇴​​🇵​​🇪​ ​🇾​​🇴​​🇺​ ​🇱​​🇮​​🇰​​🇪​ ​🇮​​🇹​...</b></h1>
+
+    <div class="nav-buttons">
+        <a href="home.html">
+            <button class="nav-btn">do you wanna go back? claim it before you go</button>
+        </a>
+    </div>
+
+    <div class="content">
+  <p>It's really something small, but I hope you like it either way :_( I don't have enough money to buy you the map in DayZ, I mean I do, but I need to spoil my brothers as well... I like you<3 It's kinda funny how I'm writing this ahead and just waiting for Christmas, so I can finally show you what I've been working on. Make sure to claim it before it disappears, I made sure to schedule my gift so it won't disappear. Go on your discord and put it in your inventory.</p>   
+<h1>5cxCjc8HjHMgnja4</h1>
+    </div>
+        <p class="footer-text">2025 Merry Christmas, to Naskiny</p>
+        <p class="footer-text">Made with <3 by Linnie</p>
+
+
+        <script>
+            function createSnowflake() {
+                const snowflake = document.createElement('div');
+                snowflake.classList.add('snowflake');
+                snowflake.innerHTML = '❄';
+                snowflake.style.left = Math.random() * 100 + 'vw';
+                snowflake.style.fontSize = (Math.random() * 1.5 + 0.5) + 'em';
+                snowflake.style.animationDuration = (Math.random() * 3 + 5) + 's';
+                snowflake.style.opacity = Math.random() * 0.6 + 0.4;
+                document.body.appendChild(snowflake);
+
+                setTimeout(() => {
+                    snowflake.remove();
+                }, 8000);
+            }
+
+            setInterval(createSnowflake, 200);
+
+            for (let i = 0; i < 20; i++) {
+                setTimeout(createSnowflake, i * 100);
+            }
+        </script>
+</body>
+</html>
