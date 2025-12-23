@@ -241,7 +241,7 @@
 
     setInterval(createSnowflake, 200);
 
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 20; i++) {
         setTimeout(createSnowflake, i * 100);
     }
 
@@ -266,7 +266,7 @@
         speed: 3,
         direction: 3,
         lastShot: 0,
-        shootCooldown: 800
+        shootCooldown: 600
     };
 
     canvas.addEventListener('mousemove', (e) => {
@@ -534,6 +534,7 @@
 </body>
 
 </html>
+
 
 
 
